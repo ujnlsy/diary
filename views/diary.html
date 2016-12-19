@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="blog">
+    <div class="blog__list">
+        <% for(var i=0; i < content.length; i++) {%>
+        <div class="blog__item">
+            <div class="blog__date"><%= content[i].date %></div>
+            <div class="blog__content"><%= content[i].content %></div>
+        </div>
+        <% } %>
+    </div>
+</div>
+</body>
+</html>
